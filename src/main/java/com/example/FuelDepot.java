@@ -23,10 +23,22 @@ public class FuelDepot {
     // Method to implement for a)
     public int nextTankToFill(int threshold) {
         // Your implementation here
+        int index = 0;
+        for(FuelTank i : this.tanks){
+            if (i.getFuelLevel() <= threshold){
+                index++;
+            }
+            return index;
+        }
+        
+           
+    
     }
+    
 
     // Method to implement for b)
     public void moveToLocation(int locIndex) {
         // Your implementation here
+        filler.setCurrentIndex(locIndex);
     }
 }
