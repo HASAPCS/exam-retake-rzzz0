@@ -25,11 +25,12 @@ public class FuelDepot {
         // Your implementation here
         int index = 0;
         for(FuelTank i : this.tanks){
+            index++;
             if (i.getFuelLevel() <= threshold){
-                index++;
+                break;
             }
-            return index;
         }
+        return index;
         
            
     
